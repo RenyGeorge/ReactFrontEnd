@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .wrapper {
     background: linear-gradient(to right, #e67e22, #e74c3c);
@@ -17,37 +14,19 @@
     width: 85%;
     margin: 0 auto;
   }
-  
-  .card-container {
-    height: 90vh;    
-    float:right;
-    background-color: white;
-    box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #000;
-    width:50%;
-  }
+
     
   .form-container {
-    background-color:lightgray;
     height: 90vh;    
-    justify-content: center;
-    text-align: center;
+    justify-content: center;   
+    text-align: center; 
     width:50%;
     float:left;
     color: #000;
   }
-  .form-container label{
-      align-content: left;
-  }
-  .form-container input[type="textbox"]{
-    align-content: right;
-}
+
   
-.key {
-    color: #f16051;
+.key {    
     border-bottom: solid 2px rgba(255,255,255,0.06);
     padding: 20px 0 20px 0;
     font-weight: 400;
@@ -57,9 +36,11 @@
     border: 0;
   }
   
-  .value {
-    color: #fff;
-    font-weight: 200;
+  
+  .valueQuote {
+    font-weight: 150;
+    font-style: italic;
+    font-size: 15px;
   }
   input[type="text"] {
     background-color: transparent;
@@ -67,17 +48,41 @@
     border-bottom: solid 1px #f16051;
     width: 30%;
     padding-bottom: 4px;
-    color: #fff !important;
+    color: #000;
     font-weight: lighter;
     letter-spacing: 2px;
+    margin-left: 15px;
     margin-bottom: 30px;
     margin-right: 20px;
-    font-size: 20px;
+
   }
   
   input[type="text"] { 
       outline: none;
   }
+  input[type="checkbox"] { 
+    margin-left: 90px;
+    margin-bottom: 30px;  
+}
+
+textarea { 
+    margin-left:15px;
+    text-align: left;
+    padding-bottom: 4px;
+    width: 30%;   
+    font-weight: lighter;
+    letter-spacing: 2px;
+    
+    }
+
+label{
+  margin-left:0px;
+  text-align: left;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+
+}
   
   input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0 30px #2c3e50 inset;
@@ -101,21 +106,26 @@
   button:active {
     outline: none;
   }
-  
+  .card-container {
+    align-items: center; 
+    height: 90vh;    
+    float:right;   
+    box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+    align-items: center;
+    justify-content: center;
+    text-align: left;   
+    width:50%;
+  }
   .card__info {    
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 2px;
+    border:solid 1px ;
+    width:80%;
+   margin: auto;
+    text-align: center;
   }
-/* default theme(light) 
-html {
-    --primaryBackground: #ffffff;
-    --primaryTextColor: #000000;
-}*/
-
-/*  dark theme 
-html[data-theme="dark"] {
-    --primaryBackground: #000000;
-    --primaryTextColor: #ffffff;
+.error{
+  color:red;
+  font-size:20px;
 }
-*/

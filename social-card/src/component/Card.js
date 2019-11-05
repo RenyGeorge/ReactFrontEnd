@@ -1,27 +1,28 @@
 import React from "react";
 
 const Card = props => (
-	<div className="card__info">
-        <h1>Card Preview</h1>
+	<div >
+        <h2 style={{textAlign: "left", marginLeft: "5px"}}>Card Preview</h2>
+		<div className="card__info">
 	 {	
-	 	props.fullName &&<p className="key"> 
-	 		<span className="value"> { props.fullName }</span>
-	 	</p> 
+	  	<p>
+	 		<h3> { props.fullName === "" ? "Your Name" : props.fullName}</h3>
+		</p>
 	 }
 	 { 	
-	 	props.department && <p className="key"> 
-	 		<span className="value" > { props.department }	</span>
-	 	</p> 
+		<p>	 	
+	 		<h5>{ props.department === "" ? "Department" : props.department}</h5>
+		</p>
+	 	
 	 }
-	 { 	
-	 	props.quote && <p className="key"> 
-	 		<span className="value"> { props.quote } </span>
-	 	</p> 
+	 { 		
+	 	<p>
+		 	<span className="valueQuote"> { props.quote  === "" ? "Quote" : props.quote} </span>
+		 </p>
+	 	
 	 }
-	 
-	 { 
-	 	props.error && <p>{ props.error }</p>  
-	 }
+	
+	 </div>
 	</div>
 );
 
