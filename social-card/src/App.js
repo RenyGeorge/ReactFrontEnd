@@ -1,9 +1,9 @@
 import React from "react";
-import Form from "./component/form"
-import Card from "./component/card"
+import Form from "./component/Form"
+import Card from "./component/Card"
 import {ThemeProvider} from "styled-components"
 import { GlobalStyles } from './component/global';
-import {lightTheme,darkTheme} from './component/theme'
+import {lightTheme,darkTheme} from './component/Theme'
 
 import "react-bootstrap/dist/react-bootstrap.min.js"
 import "./App.css"
